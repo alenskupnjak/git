@@ -6,17 +6,13 @@
  
   
  
- git add -A  // ubacuje sve datoteke
+
 
  
- git checkout -b imeGrane    // dodaje novu granu pod imenom imeGrane
- git checkout master         // prebacije se na MASTER
+
     
  
- git merge imeGrane     // vraca se i snima na granu na MASTER 
- git branch -d IMEGrane   // brise granu
- git branch -a     // prikazuje sve garane
- git mergetool
+
  
  git remote add IME https://github.com/alenskupnjak/temp.git
  git remote remove IMErepozitarija
