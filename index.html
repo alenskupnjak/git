@@ -35,8 +35,19 @@
       <td>GIT</td>
     </tr>
     <tr>
-      <td>Povezuje direktorija i GIT-a</td>
+      <td>Povezivanje lokalnog direktorija i GIT-a (IME=origin je konvencija)</td>
       <td>git remote add IME https://github.com/alenskupnjak/IME_REPOZIT.git</td>
+      <td>GIT</td>
+    </tr>
+    <tr>
+      <td>Prebacivanje podataka sa lokalnog direktorija na GIT</td>
+      <td>git push -u origin master</td>
+      <td>L43</td>
+    </tr>
+
+    <tr>
+      <td>Brisanje veze izmedu lokalnog direktorija i GIT-a (IMErepozitorija)</td>
+      <td>git remote remove IMErepozitorija</td>
       <td>GIT</td>
     </tr>
     <tr>
@@ -144,6 +155,12 @@
     </tr>
 
     <tr>
+      <td>Pregled svih logova</td>
+      <td>git reflog</td>
+      <td>L36</td>
+    </tr>
+
+    <tr>
       <td>Listanje alias komandi</td>
       <td>git config --global --list</td>
       <td>L24</td>
@@ -211,6 +228,22 @@
     <tr>
       <td>Brisanje svih promjena i vracanje na pocetnu granu</td>
       <td>git stash</td>
+      <td>L35</td>
+    </tr>
+
+    <tr>
+      <td>Prebacivanje HEAD na granu (imeBrancha)</td>
+      <td>git reset imeBrancha --soft</td>
+      <td>L35</td>
+    </tr>
+    <tr>
+      <td>Prebacivanje HEAD na granu (imeBrancha)</td>
+      <td>git reset imeBrancha --mixed</td>
+      <td>L35</td>
+    </tr>
+    <tr>
+      <td>Prebacivanje HEAD na granu (imeBrancha)</td>
+      <td>git reset imeBrancha --hard</td>
       <td>L35</td>
     </tr>
 
