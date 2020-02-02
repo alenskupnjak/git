@@ -2,19 +2,13 @@
  
 
 
- git commit -am Komentar // dodavanje svih fileove sa komentarom
- git reset HEAD order.service.ts
- git checkout -- imefile.txt
- git log --oneline --graph --decorate --all
-
  
  
- // dodavanje skracenice za git upotreba :git IME
- git config --global alias.IME "log --oneline --graph --decorate --all"
- // promjena naziva datoteke
- git mv staroIme.txt novoIme.txt  
+  
  
  git add -A  // ubacuje sve datoteke
+
+ 
  git checkout -b imeGrane    // dodaje novu granu pod imenom imeGrane
  git checkout master         // prebacije se na MASTER
     

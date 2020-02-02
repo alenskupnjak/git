@@ -55,7 +55,7 @@
       <td>GIT</td>
     </tr>
     <tr>
-      <td>Ubacuje u gile u stage statu i dodaje komentar</td>
+      <td>Ubacuje u git u stage statu i dodaje komentar</td>
       <td>git commit -am "ovdje dodaj komentar"</td>
       <td>GIT</td>
     </tr>
@@ -75,10 +75,45 @@
       <td>GIT</td>
     </tr>
     <tr>
+      <td>Lista svih commita</td>
+      <td>git log --oneline --graph --decorate --all</td>
+      <td>GIT</td>
+    </tr>
+    <tr>
+      <td>Resetira promjene u (File.name) i vraca na staro (Unstage)</td>
+      <td>git reset HEAD File.name</td>
+      <td>L23</td>
+    </tr>
+    <tr>
+      <td>Vrača datoteku na početnu vrijednost (File.name)</td>
+      <td>git checkout -- File.name</td>
+      <td>GIT</td>
+    </tr>
+
+    <tr>
+      <td>Preimenuje stari (imeStaro) u novi (imeNovo)</td>
+      <td>git mv imeStaro imeNovo</td>
+      <td>L25</td>
+    </tr>
+
+    <tr>
+      <td>Briše (imeStaro)</td>
+      <td>git rm imeStaro</td>
+      <td>L25</td>
+    </tr>
+
+    <tr>
+      <td>Radi update direktorija</td>
+      <td>git add -u</td>
+      <td>L26</td>
+    </tr>
+
+    <tr>
       <td>Prikazuje sve linkove</td>
       <td>git remote -v</td>
       <td>GIT</td>
     </tr>
+
     <tr>
       <td>Prikazuje zadnju arhiviranu verziju</td>
       <td>git show</td>
@@ -90,6 +125,7 @@
       <td>git ls-files</td>
       <td>GIT</td>
     </tr>
+
     <tr>
       <td>Mijenja user.name</td>
       <td>git config --global user.name "Your Name"</td>
@@ -102,13 +138,28 @@
     </tr>
 
     <tr>
+      <td>Definiranje alias (IME) komande</td>
+      <td>git config --global alias.IME "log --oneline --graph --decorate --all"</td>
+      <td>L24</td>
+    </tr>
+
+    <tr>
+      <td>Listanje alias komandi</td>
+      <td>git config --global --list</td>
+      <td>L24</td>
+    </tr>
+
+    <tr>
+      <td>Datoteka u kojoj su zapisane datoteke koje NE traba ažurirati</td>
+      <td>.gitignore</td>
+      <td>L27</td>
+    </tr>
+
+    <tr>
       <td>Izlazi se iz naredbi Git-a</td>
       <td>Q</td>
       <td>GIT</td>
     </tr>
-
-
-
 
   </table>
 </body>
