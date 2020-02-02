@@ -1,0 +1,73 @@
+
+ *git add path/imefile.xxx              // dodaje jedan file se u stage status
+ *git commit -m "ovdje dodaj komentar"  // ubacuje u git
+ *git add .                             // dodaje sve datoteke se u stage status
+ *git commit
+ *git log
+ git show
+ git ls-files  // lista sve fileove
+ git commit -am Komentar // dodavanje svih fileove sa komentarom
+ git reset HEAD order.service.ts
+ git checkout -- imefile.txt
+ git log --oneline --graph --decorate --all
+
+ 
+ 
+ // dodavanje skracenice za git upotreba :git IME
+ git config --global alias.IME "log --oneline --graph --decorate --all"
+ // promjena naziva datoteke
+ git mv staroIme.txt novoIme.txt  
+ 
+ git add -A  // ubacuje sve datoteke
+ git checkout -b imeGrane    // dodaje novu granu pod imenom imeGrane
+ git checkout master         // prebacije se na MASTER
+    
+ 
+ git merge imeGrane     // vraca se i snima na granu na MASTER 
+ git branch -d IMEGrane   // brise granu
+ git branch -a     // prikazuje sve garane
+ git mergetool
+ 
+ git remote add IME https://github.com/alenskupnjak/temp.git
+ git remote remove IMErepozitarija
+ *git remote -v
+ 
+ // spaja se na github projekt
+ git clone https://github.com/alenskupnjak/........
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ // HEROKU !!!
+ // verzija heroku
+ heroku -v
+ 
+ heroku login
+ 
+// traženje ssh. filea
+ ls -a -l ~/.ssh
+ 
+// traženje ID
+eval $(ssh-agent -s)
+ 
+// dodavanje shh-ključa
+ssh-add ~/.ssh/id_rsa
+  
+// hvatanje ključa
+cat ~/.ssh/id_rsa.pub
+
+// Automatski se dodaje ključ
+ heroku keys:add
+ 
+ // kreiranje projekta
+ heroku create skup-crudmongo
+ 
+ // spremanje na HEROKU side
+ git push heroku master
+ 
+ 
