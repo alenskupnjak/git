@@ -1,11 +1,7 @@
 
- *git add path/imefile.xxx              // dodaje jedan file se u stage status
- *git commit -m "ovdje dodaj komentar"  // ubacuje u git
- *git add .                             // dodaje sve datoteke se u stage status
- *git commit
- *git log
- git show
- git ls-files  // lista sve fileove
+ 
+
+
  git commit -am Komentar // dodavanje svih fileove sa komentarom
  git reset HEAD order.service.ts
  git checkout -- imefile.txt
