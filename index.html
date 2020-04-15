@@ -7,271 +7,315 @@
     <meta name="viewport" content="width=device.width, initial.scale=1.0">
     <meta http.equiv="X.UA.Compatible" content="ie=edge">
     <link rel="shortcut icon" type="image/icon" href="img/Git.ico">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     <title>Git tablica</title>
   </head>
   
 <body>
-  
-  <table border="1">
-    <caption>GIT tablica</caption>
-    <th>Opis naredbe</th>
-    <th>Naredba u command line</th>
-    <th>Modul</th>
+  <div class="container">
+    <div class="row w-140">
+      <table class="table table-sm table-hover table-striped">
+      <thead>
+        <th>#</th>
+        <th>Opis naredbe</th>
+        <th>Naredba u command line</th>
+        <th>Modul</th>
+      </thead>
+      <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Verzija</td>
+            <td>git --version</td>
+            <td>GIT</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Inicijalizira GIT u novom kreiranom FOLDERU</td>
+            <td>git init <strong style="color: red;">FOLDER</strong></td>
+            <td>GIT</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Inicijalizira GIT u postojećem folderu</td>
+            <td>git init</td>
+            <td>GIT</td>
+          </tr>
 
-    <tr>
-      <td>Verzija</td>
-      <td>git --version</td>
-      <td>GIT</td>
-    </tr>
-    <tr>
-      <td>Inicijalizira GIT u novom kreiranom FOLDERU</td>
-      <td>git init <strong style="color: red;">FOLDER</strong></td>
-      <td>GIT</td>
-    </tr>
-    <tr>
-      <td>Inicijalizira GIT u postojećem folderu</td>
-      <td>git init</td>
-      <td>GIT</td>
-    </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Povezivanje lokalnog direktorija i GIT-a (IME=origin je konvencija)</td>
+            <td>git remote add <strong style="color: red;">IME</strong> 
+            <strong style="color: green;"> https://github.com/alenskupnjak/IME_REPOZIT.git</strong> 
+            </td>
+            <td>GIT</td>
+          </tr>
 
-    <tr>
-      <td>Povezivanje lokalnog direktorija i GIT-a (IME=origin je konvencija)</td>
-       <td>git remote add <strong style="color: red;">IME</strong> 
-       <strong style="color: green;"> https://github.com/alenskupnjak/IME_REPOZIT.git</strong> 
-       </td>
-      <td>GIT</td>
-    </tr>
-
-    <tr>
-      <td>Promjena imena lokalnog repozitorija (ručno promjeniti ime na GIT-u!)</td>
-       <td>git remote set-url origin
-       <strong style="color: green;"> https://github.com/alenskupnjak/IME_REPOZIT.git</strong> 
-       </td>
-      <td>GIT</td>
-    </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Promjena imena lokalnog repozitorija (ručno promjeniti u GIT-u!)</td>
+            <td>git remote set-url origin
+            <strong style="color: green;"> https://github.com/alenskupnjak/IME_REPOZIT.git</strong> 
+            </td>
+            <td>GIT</td>
+          </tr>
 
 
-    <tr>
-      <td>Prebacivanje podataka sa lokalnog direktorija na GIT</td>
-      <td>git push -u origin master</td>
-      <td>L43</td>
-    </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Prebacivanje podataka sa lokalnog direktorija na GIT</td>
+            <td>git push -u origin master</td>
+            <td>L43</td>
+          </tr>
 
-    <tr>
-      <td>Brisanje veze izmedu lokalnog direktorija i GIT-a (IMErepozitorija)</td>
-      <td>git remote remove <strong style="color: red;">IMErepozitorija</strong> </td>
-      <td>GIT</td>
-    </tr>
-    <tr>
-      <td>Povlačenje podataka sa GIT-a</td>
-      <td>git pull <remote><strong style="color:  green;">https://github.com/alenskupnjak/IME_REPOZIT.git</strong> </td>
-      <td>GIT</td>
-    </tr>
-    <tr>
-      <td>Prikazuje status projekta</td>
-      <td>git status </td>
-      <td>GIT</td>
-    </tr>
-    <tr>
-      <td>Dodaje jedan file se u stage status</td>
-      <td>git add path/IMEfile.xxx</td>
-      <td>GIT</td>
-    </tr>
-    <tr>
-      <td>Ubacuje u git</td>
-      <td>git commit -m "ovdje dodaj komentar"</td>
-      <td>GIT</td>
-    </tr>
-    <tr>
-      <td>Ubacuje u git u stage statu i dodaje komentar</td>
-      <td>git commit -am "ovdje dodaj komentar"</td>
-      <td>GIT</td>
-    </tr>
-    <tr>
-      <td>Dodaje sve datoteke u stage status</td>
-      <td>git add .</td>
-      <td>GIT</td>
-    </tr>
-    <tr>
-      <td>Otvara text editor za dodavanje komentara</td>
-      <td>git commit</td>
-      <td>GIT</td>
-    </tr>
-    <tr>
-      <td>Prikazuje sve commit-ove</td>
-      <td>git log</td>
-      <td>GIT</td>
-    </tr>
-    <tr>
-      <td>Lista svih commita</td>
-      <td>git log --oneline --graph --decorate --all</td>
-      <td>GIT</td>
-    </tr>
-    <tr>
-      <td>Resetira promjene u (File.name) i vraca na staro (Unstage)</td>
-      <td>git reset HEAD File.name</td>
-      <td>L23</td>
-    </tr>
-    <tr>
-      <td>Vrača datoteku na početnu vrijednost (File.name)</td>
-      <td>git checkout -- File.name</td>
-      <td>GIT</td>
-    </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Brisanje veze izmedu lokalnog direktorija i GIT-a (IMErepozitorija)</td>
+            <td>git remote remove <strong style="color: red;">IMErepozitorija</strong> </td>
+            <td>GIT</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Povlačenje podataka sa GIT-a</td>
+            <td>git pull <remote><strong style="color:  green;">https://github.com/alenskupnjak/IME_REPOZIT.git</strong> </td>
+            <td>GIT</td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Prikazuje status projekta</td>
+            <td>git status </td>
+            <td>GIT</td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>Dodaje jedan file se u stage status</td>
+            <td>git add path/IMEfile.xxx</td>
+            <td>GIT</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Ubacuje u git</td>
+            <td>git commit -m "ovdje dodaj komentar"</td>
+            <td>GIT</td>
+          </tr>
+          <tr>
+            <th scope="row">12</th>
+            <td>Ubacuje u git u stage status i dodaje komentar</td>
+            <td>git commit -am "ovdje dodaj komentar"</td>
+            <td>GIT</td>
+          </tr>
+          <tr>
+            <th scope="row">13</th>
+            <td>Dodaje sve datoteke u stage status</td>
+            <td>git add .</td>
+            <td>GIT</td>
+          </tr>
+          <tr>
+            <th scope="row">14</th>
+            <td>Otvara text editor za dodavanje komentara</td>
+            <td>git commit</td>
+            <td>GIT</td>
+          </tr>
+          <tr>
+            <th scope="row">15</th>
+            <td>Prikazuje sve commit-ove</td>
+            <td>git log</td>
+            <td>GIT</td>
+          </tr>
+          <tr>
+            <th scope="row">16</th>
+            <td>Lista svih commita</td>
+            <td>git log --oneline --graph --decorate --all</td>
+            <td>GIT</td>
+          </tr>
+          <tr>
+            <th scope="row">17</th>
+            <td>Resetira promjene u (File.name) i vraca na staro (Unstage)</td>
+            <td>git reset HEAD File.name</td>
+            <td>L23</td>
+          </tr>
+          <tr>
+            <th scope="row">18</th>
+            <td>Vrača datoteku na početnu vrijednost (File.name)</td>
+            <td>git checkout -- File.name</td>
+            <td>GIT</td>
+          </tr>
 
-    <tr>
-      <td>Preimenuje stari (imeStaro) u novi (imeNovo)</td>
-      <td>git mv imeStaro imeNovo</td>
-      <td>L25</td>
-    </tr>
+          <tr>
+            <th scope="row">19</th>
+            <td>Preimenuje GIT vezu (imeStaro) u novi (imeNovo)</td>
+            <td>git mv imeStaro imeNovo</td>
+            <td>L25</td>
+          </tr>
 
-    <tr>
-      <td>Briše (imeStaro)</td>
-      <td>git rm imeStaro</td>
-      <td>L25</td>
-    </tr>
+          <tr>
+            <th scope="row">20</th>
+            <td>Briše (imeStaro)</td>
+            <td>git rm imeStaro</td>
+            <td>L25</td>
+          </tr>
 
-    <tr>
-      <td>Radi update direktorija</td>
-      <td>git add -u</td>
-      <td>L26</td>
-    </tr>
+          <tr>
+            <th scope="row">21</th>
+            <td>Radi update direktorija</td>
+            <td>git add -u</td>
+            <td>L26</td>
+          </tr>
 
-    <tr>
-      <td>Prikazuje sve linkove</td>
-      <td>git remote -v</td>
-      <td>GIT</td>
-    </tr>
+          <tr>
+            <th scope="row">22</th>
+            <td>Prikazuje sve linkove</td>
+            <td>git remote -v</td>
+            <td>GIT</td>
+          </tr>
 
-    <tr>
-      <td>Prikazuje zadnju arhiviranu verziju</td>
-      <td>git show</td>
-      <td>GIT</td>
-    </tr>
+          <tr>
+            <th scope="row">23</th>
+            <td>Prikazuje zadnju arhiviranu verziju</td>
+            <td>git show</td>
+            <td>GIT</td>
+          </tr>
 
-    <tr>
-      <td>Lista sve fileove</td>
-      <td>git ls-files</td>
-      <td>GIT</td>
-    </tr>
+          <tr>
+            <th scope="row">24</th>
+            <td>Lista sve fileove</td>
+            <td>git ls-files</td>
+            <td>GIT</td>
+          </tr>
 
-    <tr>
-      <td>Mijenja user.name</td>
-      <td>git config --global user.name "Your Name"</td>
-      <td>GIT</td>
-    </tr>
-    <tr>
-      <td>Mijenja user.email</td>
-      <td>git config --global user.email "Your@email.com"</td>
-      <td>GIT</td>
-    </tr>
+          <tr>
+            <th scope="row">25</th>
+            <td>Mijenja user.name</td>
+            <td>git config --global user.name "Your Name"</td>
+            <td>GIT</td>
+          </tr>
+          <tr>
+            <th scope="row">26</th>
+            <td>Mijenja user.email</td>
+            <td>git config --global user.email "Your@email.com"</td>
+            <td>GIT</td>
+          </tr>
+          <tr>
+            <th scope="row">27</th>
+            <td>Definiranje alias (IME) komande</td>
+            <td>git config --global alias.<strong style="color: red;">IME</strong> "log --oneline --graph --decorate --all"</td>
+            <td>L24</td>
+          </tr>
+          <tr>
+            <th scope="row">28</th>
+            <td>Pregled svih logova</td>
+            <td>git reflog</td>
+            <td>L36</td>
+          </tr>
+          <tr>
+            <th scope="row">29</th>
+            <td>Listanje alias komandi</td>
+            <td>git config --global --list</td>
+            <td>L24</td>
+          </tr>
 
-    <tr>
-      <td>Definiranje alias (IME) komande</td>
-      <td>git config --global alias.<strong style="color: red;">IME</strong> "log --oneline --graph --decorate --all"</td>
-      <td>L24</td>
-    </tr>
+          <tr>
+            <th scope="row">30</th>
+            <td>Datoteka u kojoj su zapisane datoteke koje NE treba ažurirati</td>
+            <td>.gitignore</td>
+            <td>L27</td>
+          </tr>
+          <tr>
+            <th scope="row">31</th>
+            <td>Prikazuje trenutnu granu</td>
+            <td>git branch</td>
+            <td>L32</td>
+          </tr>
+          <tr>
+            <th scope="row">32</th>
+            <td>Prikazuje sve grane</td>
+            <td>git branch -a</td>
+            <td>L32</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">33</th>
+            <td>Kreira novu granu (ImeGrane)</td>
+            <td>git checkout -b <strong style="color: red;">ImeGrane</strong></td>
+            <td>L32</td>
+          </tr>
 
-    <tr>
-      <td>Pregled svih logova</td>
-      <td>git reflog</td>
-      <td>L36</td>
-    </tr>
+          <tr>
+            <th scope="row">34</th>
+            <td>Vračanje u granu Master</td>
+            <td>git checkout master</td>
+            <td>L32</td>
+          </tr>
 
-    <tr>
-      <td>Listanje alias komandi</td>
-      <td>git config --global --list</td>
-      <td>L24</td>
-    </tr>
+          <tr>
+            <th scope="row">35</th>
+            <td>Snimanje promjene iz (ImeGrane) u granu Master</td>
+            <td>git merge <strong style="color: red;">ImeGrane</strong></td>
+            <td>L32</td>
+          </tr>
 
-    <tr>
-      <td>Datoteka u kojoj su zapisane datoteke koje NE treba ažurirati</td>
-      <td>.gitignore</td>
-      <td>L27</td>
-    </tr>
+          <tr>
+            <th scope="row">36</th>
+            <td>Pokretanje zadanog softvera za riješavanje konflikata</td>
+            <td>git mergetool</td>
+            <td>L33</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">37</th>
+            <td>Brisanje branch (ImeGrane)</td>
+            <td>git branch -d <strong style="color: red;">ImeGrane</strong></td>
+            <td>L32</td>
+          </tr>
 
-    <tr>
-      <td>Prikazuje trenutnu granu</td>
-      <td>git branch</td>
-      <td>L32</td>
-    </tr>
-    <tr>
-      <td>Prikazuje sve grane</td>
-      <td>git branch -a</td>
-      <td>L32</td>
-    </tr>
-    
-    <tr>
-      <td>Kreira novu granu (ImeGrane)</td>
-      <td>git checkout -b <strong style="color: red;">ImeGrane</strong></td>
-      <td>L32</td>
-    </tr>
+          <tr>
+            <th scope="row">38</th>
+            <td>Dodavanje svog taga (ImeTag)</td>
+            <td>git tag <strong style="color: red;">ImeTag</strong></td>
+            <td>L34</td>
+          </tr>
 
-    <tr>
-      <td>Vračanje u granu Master</td>
-      <td>git checkout master</td>
-      <td>L32</td>
-    </tr>
+          <tr>
+            <th scope="row">39</th>
+            <td>Brisanje taga (ImeTag)</td>
+            <td>git tag -d <strong style="color: red;">ImeTag</strong></td>
+            <td>L34</td>
+          </tr>
 
-    <tr>
-      <td>Snimanje promjene iz (ImeGrane) u granu Master</td>
-      <td>git merge <strong style="color: red;">ImeGrane</strong></td>
-      <td>L32</td>
-    </tr>
+          <tr>
+            <th scope="row">40</th>
+            <td>Brisanje svih promjena i vračanje na početnu granu</td>
+            <td>git stash</td>
+            <td>L35</td>
+          </tr>
 
-    <tr>
-      <td>Pokretanje zadanog softvera za riješavanje konflikata</td>
-      <td>git mergetool</td>
-      <td>L33</td>
-    </tr>
-    
-    <tr>
-      <td>Brisanje branch (ImeGrane)</td>
-      <td>git branch -d <strong style="color: red;">ImeGrane</strong></td>
-      <td>L32</td>
-    </tr>
+          <tr>
+            <th scope="row">41</th>
+            <td>Prebacivanje HEAD na granu (imeBrancha)</td>
+            <td>git reset <strong style="color: red;">imeBrancha</strong> --soft</td>
+            <td>L35</td>
+          </tr>
+          <tr>
+            <th scope="row">42</th>
+            <td>Prebacivanje HEAD na granu (imeBrancha)</td>
+            <td>git reset <strong style="color: red;">imeBrancha</strong> --mixed</td>
+            <td>L35</td>
+          </tr>
+          <tr>
+            <th scope="row">43</th>
+            <td>Prebacivanje HEAD na granu (imeBrancha)</td>
+            <td>git reset <strong style="color: red;">imeBrancha</strong> --hard</td>
+            <td>L35</td>
+          </tr>
 
-    <tr>
-      <td>Dodavanje svog taga (ImeTag)</td>
-      <td>git tag <strong style="color: red;">ImeTag</strong></td>
-      <td>L34</td>
-    </tr>
-
-    <tr>
-      <td>Brisanje taga (ImeTag)</td>
-      <td>git tag -d <strong style="color: red;">ImeTag</strong></td>
-      <td>L34</td>
-    </tr>
-
-    <tr>
-      <td>Brisanje svih promjena i vracanje na pocetnu granu</td>
-      <td>git stash</td>
-      <td>L35</td>
-    </tr>
-
-    <tr>
-      <td>Prebacivanje HEAD na granu (imeBrancha)</td>
-      <td>git reset <strong style="color: red;">imeBrancha</strong> --soft</td>
-      <td>L35</td>
-    </tr>
-    <tr>
-      <td>Prebacivanje HEAD na granu (imeBrancha)</td>
-      <td>git reset <strong style="color: red;">imeBrancha</strong> --mixed</td>
-      <td>L35</td>
-    </tr>
-    <tr>
-      <td>Prebacivanje HEAD na granu (imeBrancha)</td>
-      <td>git reset <strong style="color: red;">imeBrancha</strong> --hard</td>
-      <td>L35</td>
-    </tr>
-
-    <tr>
-      <td>Izlazi se iz naredbi Git-a</td>
-      <td>Q</td>
-      <td>GIT</td>
-    </tr>
-
-  </table>
+          <tr>
+            <th scope="row">44</th>
+            <td>Izlazi se iz naredbi Git-a</td>
+            <td>Q</td>
+            <td>GIT</td>
+          </tr>
+        <tbody>
+      </table>
+    </div>
+  </div>
 </body>
-
 </html>
