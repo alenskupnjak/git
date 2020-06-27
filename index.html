@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-  <head>
-    <!-- <meta charset="UTF.8"> -->
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-    <meta name="viewport" content="width=device.width, initial.scale=1.0">
-    <meta http.equiv="X.UA.Compatible" content="ie=edge">
-    <link rel="shortcut icon" type="image/icon" href="img/Git.ico">
-    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-    <title>Git tablica</title>
-  </head>
-  
+
+<head>
+  <!-- <meta charset="UTF.8"> -->
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device.width, initial.scale=1.0">
+  <meta http.equiv="X.UA.Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/icon" href="img/Git.ico">
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  <title>Git tablica</title>
+</head>
+
 <body>
   <div class="container">
     <div class="row row-fluid">
       <table class="table table-sm table-hover table-striped">
-      <thead>
-        <th>#</th>
-        <th>Opis naredbe</th>
-        <th>Naredba u command line</th>
-        <th>Modul</th>
-      </thead>
-      <tbody>
+        <thead>
+          <th>#</th>
+          <th>Opis naredbe</th>
+          <th>Naredba u command line</th>
+          <th>Modul</th>
+        </thead>
+        <tbody>
           <tr>
             <th scope="row">1</th>
             <td>Verzija</td>
@@ -44,8 +44,8 @@
           <tr>
             <th scope="row">4</th>
             <td>Povezivanje lokalnog direktorija i GIT-a (IME=origin je konvencija)</td>
-            <td>git remote add <strong style="color: red;">IME</strong> 
-            <strong style="color: green;"> https://github.com/alenskupnjak/IME_REPOZIT.git</strong> 
+            <td>git remote add <strong style="color: red;">IME</strong>
+              <strong style="color: green;"> https://github.com/alenskupnjak/IME_REPOZIT.git</strong>
             </td>
             <td>GIT</td>
           </tr>
@@ -54,7 +54,7 @@
             <th scope="row">5</th>
             <td>Promjena imena lokalnog repozitorija (ručno promjeniti u GIT-u!)</td>
             <td>git remote set-url origin
-            <strong style="color: green;"> https://github.com/alenskupnjak/IME_REPOZIT.git</strong> 
+              <strong style="color: green;"> https://github.com/alenskupnjak/IME_REPOZIT.git</strong>
             </td>
             <td>GIT</td>
           </tr>
@@ -62,8 +62,8 @@
 
           <tr>
             <th scope="row">6</th>
-            <td>Prebacivanje podataka sa lokalnog direktorija na GIT</td>
-            <td>git push -u origin master</td>
+            <td><strong style="color:#0284d0;">Prebacivanje podataka sa lokalnog direktorija na GIT</strong></td>
+            <td>git push</td>
             <td>L43</td>
           </tr>
 
@@ -76,7 +76,15 @@
           <tr>
             <th scope="row">8</th>
             <td>Povlačenje podataka sa GIT-a</td>
-            <td>git pull <remote><strong style="color:  green;">https://github.com/alenskupnjak/IME_REPOZIT.git</strong> </td>
+            <td>git pull <remote><strong style="color:  green;">https://github.com/alenskupnjak/IME_REPOZIT.git</strong>
+            </td>
+            <td>GIT</td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td><strong style="color:#0284d0;">Kopiranje podataka sa GIT-Linka u novi direktorij</strong></td>
+            <td>git clone <remote><strong
+                  style="color:  green;">https://github.com/alenskupnjak/IME_REPOZIT.git</strong> </td>
             <td>GIT</td>
           </tr>
           <tr>
@@ -111,7 +119,7 @@
           </tr>
           <tr>
             <th scope="row">14</th>
-            <td>Otvara text editor za dodavanje komentara</td>
+            <td><strong style="color:#0284d0;">Otvara text editor za dodavanje komentara</strong></td>
             <td>git commit</td>
             <td>GIT</td>
           </tr>
@@ -185,19 +193,20 @@
           <tr>
             <th scope="row">25</th>
             <td>Mijenja user.name</td>
-            <td>git config --global user.name "Your Name"</td>
+            <td>git config --global user.name "<strong style="color: red;">YourName</strong>"</td>
             <td>GIT</td>
           </tr>
           <tr>
             <th scope="row">26</th>
             <td>Mijenja user.email</td>
-            <td>git config --global user.email "Your@email.com"</td>
+            <td>git config --global user.email "<strong style="color: red;">Your@email.com</strong>"</td>
             <td>GIT</td>
           </tr>
           <tr>
             <th scope="row">27</th>
             <td>Definiranje alias (IME) komande</td>
-            <td>git config --global alias.<strong style="color: red;">IME</strong> "log --oneline --graph --decorate --all"</td>
+            <td>git config --global alias.<strong style="color: red;">IME</strong> "log --oneline --graph --decorate
+              --all"</td>
             <td>L24</td>
           </tr>
           <tr>
@@ -231,7 +240,7 @@
             <td>git branch -a</td>
             <td>L32</td>
           </tr>
-          
+
           <tr>
             <th scope="row">33</th>
             <td>Kreira novu granu (ImeGrane)</td>
@@ -259,7 +268,7 @@
             <td>git mergetool</td>
             <td>L33</td>
           </tr>
-          
+
           <tr>
             <th scope="row">37</th>
             <td>Brisanje branch (ImeGrane)</td>
